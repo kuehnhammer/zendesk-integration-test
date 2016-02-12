@@ -60,9 +60,10 @@
     [ZDKLogger setLogLevel:ZDKLogLevelVerbose];
     [ZDKConfig instance].userLocale = @"de";
 
-    [[ZDKConfig instance] initializeWithAppId:@"c556a6154e95f42aad7063354874fe1efe4075278c474cb4"
-                                   zendeskUrl:@"https://scan2lead.zendesk.com"
-                                     ClientId:@"mobile_sdk_client_1be78330c031b64f3aa0"
+#error - dummy values here
+    [[ZDKConfig instance] initializeWithAppId:@"REPLACE_ME"
+                                   zendeskUrl:@"REPLACE_ME"
+                                     ClientId:@"REPLACE_ME"
                                     onSuccess:^() {
                                         
                                         NSLog(@"ZenDesk init OK");
