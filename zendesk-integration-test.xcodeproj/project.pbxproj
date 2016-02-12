@@ -13,6 +13,8 @@
 		408E1AF21C6E213300A57CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408E1AF01C6E213300A57CF1 /* Main.storyboard */; };
 		408E1AF41C6E213300A57CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408E1AF31C6E213300A57CF1 /* Assets.xcassets */; };
 		408E1AF71C6E213300A57CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408E1AF51C6E213300A57CF1 /* LaunchScreen.storyboard */; };
+		408E1B001C6E2C5600A57CF1 /* StuffTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 408E1AFF1C6E2C5600A57CF1 /* StuffTableViewController.m */; };
+		E2B4F8EEFBEDD09C313EF77D /* libPods-zendesk-integration-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F158F47FAC36A33096BD5AE6 /* libPods-zendesk-integration-test.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		408E1AF31C6E213300A57CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		408E1AF61C6E213300A57CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		408E1AF81C6E213300A57CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408E1AFE1C6E2C5600A57CF1 /* StuffTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuffTableViewController.h; sourceTree = "<group>"; };
+		408E1AFF1C6E2C5600A57CF1 /* StuffTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuffTableViewController.m; sourceTree = "<group>"; };
+		90CB29750CECC3E61D7A56A7 /* Pods-zendesk-integration-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zendesk-integration-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zendesk-integration-test/Pods-zendesk-integration-test.debug.xcconfig"; sourceTree = "<group>"; };
+		C8A820AC65A1A7EA09C0E02D /* Pods-zendesk-integration-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zendesk-integration-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-zendesk-integration-test/Pods-zendesk-integration-test.release.xcconfig"; sourceTree = "<group>"; };
+		F158F47FAC36A33096BD5AE6 /* libPods-zendesk-integration-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zendesk-integration-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B4F8EEFBEDD09C313EF77D /* libPods-zendesk-integration-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				408E1AE61C6E213300A57CF1 /* zendesk-integration-test */,
 				408E1AE51C6E213300A57CF1 /* Products */,
+				5D6B33DF2DD3993DF627FFD4 /* Pods */,
+				88810BBF0055B685EDCC2B04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +77,8 @@
 				408E1AF51C6E213300A57CF1 /* LaunchScreen.storyboard */,
 				408E1AF81C6E213300A57CF1 /* Info.plist */,
 				408E1AE71C6E213300A57CF1 /* Supporting Files */,
+				408E1AFE1C6E2C5600A57CF1 /* StuffTableViewController.h */,
+				408E1AFF1C6E2C5600A57CF1 /* StuffTableViewController.m */,
 			);
 			path = "zendesk-integration-test";
 			sourceTree = "<group>";
@@ -79,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5D6B33DF2DD3993DF627FFD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90CB29750CECC3E61D7A56A7 /* Pods-zendesk-integration-test.debug.xcconfig */,
+				C8A820AC65A1A7EA09C0E02D /* Pods-zendesk-integration-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88810BBF0055B685EDCC2B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F158F47FAC36A33096BD5AE6 /* libPods-zendesk-integration-test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408E1AFB1C6E213300A57CF1 /* Build configuration list for PBXNativeTarget "zendesk-integration-test" */;
 			buildPhases = (
+				B601FCBE345EE37735ADCEF4 /* Check Pods Manifest.lock */,
 				408E1AE01C6E213300A57CF1 /* Sources */,
 				408E1AE11C6E213300A57CF1 /* Frameworks */,
 				408E1AE21C6E213300A57CF1 /* Resources */,
+				AD24A53750200F29A2886DF0 /* Embed Pods Frameworks */,
+				9BCD49134BC484A6CD1C5812 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +142,7 @@
 				TargetAttributes = {
 					408E1AE31C6E213300A57CF1 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7YSBG55W57;
 					};
 				};
 			};
@@ -144,11 +177,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BCD49134BC484A6CD1C5812 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zendesk-integration-test/Pods-zendesk-integration-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD24A53750200F29A2886DF0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zendesk-integration-test/Pods-zendesk-integration-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B601FCBE345EE37735ADCEF4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		408E1AE01C6E213300A57CF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408E1B001C6E2C5600A57CF1 /* StuffTableViewController.m in Sources */,
 				408E1AEF1C6E213300A57CF1 /* ViewController.m in Sources */,
 				408E1AEC1C6E213300A57CF1 /* AppDelegate.m in Sources */,
 				408E1AE91C6E213300A57CF1 /* main.m in Sources */,
@@ -261,23 +343,31 @@
 		};
 		408E1AFC1C6E213300A57CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CB29750CECC3E61D7A56A7 /* Pods-zendesk-integration-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "zendesk-integration-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitstem.zendesk-integration-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		408E1AFD1C6E213300A57CF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A820AC65A1A7EA09C0E02D /* Pods-zendesk-integration-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "zendesk-integration-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitstem.zendesk-integration-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -300,6 +390,7 @@
 				408E1AFD1C6E213300A57CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
